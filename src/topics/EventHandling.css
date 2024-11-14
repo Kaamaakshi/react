@@ -1,0 +1,18 @@
+/* EventHandling.css */
+.eventhandling-container {
+  max-width: 1200px; /* Limit the content width */
+  margin: 0 auto; /* Center the content */
+}
+
+.eventhandling-container h2 {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #333; /* Dark color for the heading */
+}
+
+.eventhandling-container p {
+  font-size: 3.2rem;
+  color: #555; /* Light gray color for the text */
+  line-height: 1.6; /* Increase line height for readability */
+  margin-bottom: 20px; /* Space between paragraphs */
+}

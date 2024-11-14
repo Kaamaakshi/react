@@ -1,0 +1,42 @@
+/* JSXSyntax.css */
+.syntax-container {
+  max-width: 1200px; /* Limit the content width */
+  margin: 0 auto; /* Center align the content */
+}
+
+.syntax-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333; /* Dark color for the heading */
+}
+
+.syntax-container p {
+  font-size: 1.2rem;
+  color: #555; /* Light gray color for the text */
+  line-height: 1.6; /* Increase line height for readability */
+  margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Specific styles for code examples within the content */
+.syntax-container code {
+  background-color: #f4f4f4;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  color: #d14; /* Light red color for the code */
+}
+
+/* Code block styling for multi-line code examples */
+.syntax-container pre {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: monospace;
+  overflow-x: auto; /* Allow horizontal scrolling for long code lines */
+  color: #333;
+  line-height: 1.5;
+}
+
+.syntax-container pre code {
+  color: inherit; /* Inherit the color from the pre block */
+}

@@ -1,0 +1,35 @@
+/* ReactHooks.css */
+.hooks-container {
+  max-width: 1200px; /* Limit the content width */
+  margin: 0 auto; /* Center the content */
+}
+
+.hooks-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333; /* Dark color for the heading */
+}
+
+.hooks-container p {
+  font-size: 1.2rem;
+  color: #555; /* Light gray color for the text */
+  line-height: 1.6; /* Increase line height for readability */
+  margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Additional styling for the list of hooks */
+.hooks-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.hooks-container li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.hooks-container li strong {
+  color: #2c3e50; /* Darker color for the hook names */
+  font-weight: bold;
+}

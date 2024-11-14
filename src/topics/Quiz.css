@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Quiz Container */
+.quiz-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Timer Section */
+.timer {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f44336;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Question Section */
+.question-container {
+  margin-bottom: 20px;
+}
+
+.question-container h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.question-container p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Option List Styling */
+.option-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.option-list li {
+  background-color: #e1f5fe;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.option-list li:hover {
+  background-color: #80deea;
+  transform: scale(1.03);
+}
+
+.option-list li.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.option-list li.selected:hover {
+  background-color: #388e3c;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.navigation-buttons button {
+  padding: 12px 20px;
+  font-size: 1em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 45%;
+}
+
+.navigation-buttons button:hover {
+  background-color: #388e3c;
+}
+
+.navigation-buttons button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+/* Submit and Review buttons */
+.submit-review-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.submit-review-buttons button {
+  padding: 15px 40px;
+  font-size: 1.2em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-review-buttons button:hover {
+  background-color: #388e3c;
+}
+
+/* Review Mode Styling */
+.review-container {
+  margin-top: 20px;
+}
+
+.review-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.review-container .question-review {
+  margin-bottom: 25px;
+}
+
+.review-container .question-review p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.review-container .question-review .answer {
+  font-weight: bold;
+}
+
+.review-container .question-review .correct-answer {
+  color: green;
+}
+
+.review-container .question-review .wrong-answer {
+  color: red;
+}
+
+/* Add slight shadow to buttons and options for improved interactivity */
+.navigation-buttons button,
+.submit-review-buttons button,
+.option-list li {
+  transition: all 0.3s ease;
+}
+
+/* Option List Items */
+.option-list li:hover {
+  background-color: #80deea;
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option-list li.selected {
+  background-color: #388e3c;
+  color: white;
+}
+
+.option-list li.selected:hover {
+  background-color: #2c6e2f;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 20px;
+  }
+
+  .navigation-buttons button {
+    width: 48%;
+  }
+
+  .submit-review-buttons button {
+    width: 100%;
+    padding: 12px 25px;
+  }
+}
+
+/* Improved focus styles for accessibility */
+button:focus,
+.option-list li:focus {
+  outline: 3px solid #2196f3;
+  box-shadow: 0 0 8px rgba(33, 150, 243, 0.7);
+}
+
+/* Smooth transition for hover and focus states */
+button,
+.option-list li {
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}

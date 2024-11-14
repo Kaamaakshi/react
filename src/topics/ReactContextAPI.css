@@ -1,39 +1,6 @@
 /* App.css */
 .App {
   display: flex;
-}
-
-.content {
-  margin-left: 250px; /* Offset the content to the right of the sidebar */
-  padding: 20px;
-  flex-grow: 1;
-  background-color: #f9f9f9;
-}
-
-.content h2 {
-  font-size: 2rem;
-  color: #333;
-}
-
-.content p {
-  font-size: 1.2rem;
-  color: #555;
-  line-height: 1.6;
-}
-
-/* Make it responsive on smaller screens */
-@media (max-width: 768px) {
-  .sidebar {
-    width: 200px;
-  }
-
-  .content {
-    margin-left: 0;
-  }
-}
-/* App.css */
-.App {
-  display: flex;
   height: 100vh;
 }
 
